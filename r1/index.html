@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+	<title>분당서울대학교병원</title>
+
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+
+	<!-- 파비콘 및 메타포 아이콘 적용 -->
+	<!-- 가장 작은 형태EX12.의 16x16 크기의 ico -->
+	<link rel="shortcut icon" href="data/favicon/favicon.ico">
+	<!-- 가장 작은 형태의 16x16 크기의 png -->
+	<link rel="shortcut icon" href="data/favicon/favicon_16x16.png" type="image/x-icon">
+	<!-- 일반 앱형태의 아이콘 설정 -->
+	<link rel="icon" href="data/favicon/favicon.ico">
+	<link rel="icon" href="data/favicon/favicon_16x16.png" sizes="16x16">
+	<link rel="icon" href="data/favicon/favicon_32x32.png" sizes="32x32">
+	<link rel="icon" href="data/favicon/favicon_48x48.png" sizes="48x48">
+	<link rel="icon" href="data/favicon/favicon_64x64.png" sizes="64x64">
+	<link rel="icon" href="data/favicon/favicon_128x128.png" sizes="128x128">
+	<!-- 아이폰 고해상도용 파비콘 152x152 -->
+	<link rel="apple-touch-icon-precomposed" href="data/favicon/favicon_152x152.png">
+
+	<!-- 인터넷 익스플로러용 타일 아이콘 144x144 -->
+	<meta name="msapplication-TileColor" content="#00348B">
+	<meta name="msapplication-TileImage" content="data/favicon/favicon_144x144.png">
+
+	<!-- 모바일 웹앱 문서정보에 대한 설정 -->
+	<meta name="title" content="분당서울대학교병원">
+	<meta name="auther" content="이성민">
+	<meta name="url" content="http://yayay7.dothome.co.kr/r1">
+	<meta name="description" content="분당서울대학교병원은 세계의료의 표준을 선도하는 국민의 병원이 되겠습니다.">
+	<meta name="keywords" content="분당서울대학교병원, 분당대학병원, 분당병원, 성남병원">
+	<!-- 애플 어플 문서 정보 설정 -->
+	<meta name="apple-mobile-web-app-title" content="분당서울대학교병원">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!-- 소셜에 문서정보 노출 설정 -->
+	<meta itemprop="name" content="분당서울대학교병원">
+	<meta itemprop="description" content="분당서울대학교병원은 세계의료의 표준을 선도하는 국민의 병원이 되겠습니다.">
+	<meta itemprop="image" content="data/favicon/favicon_256x256.png">
+	<!-- 페이스북에 노출 설정 -->
+	<meta property="fb:app_id" content="APP_ID">
+	<!-- 카카오톡, 블로그 등의 크롤링으로 화면 미리보기 노출 -->
+	<meta property="og:type" content="Website">
+	<meta property="og:title" content="분당서울대학교병원">
+	<meta property="og:url" content="./index.html">
+	<meta property="og:description" content="분당서울대학교병원은 세계의료의 표준을 선도하는 국민의 병원이 되겠습니다.">
+	<meta property="og:img" content="http://yayay7.dothome.co.kr/r1/data/vs1.png"><!-- 썸네일이미지 . http://부터 시작하는 절대주소로 남겨야 함 -->
+
+	<!--제이쿼리 파일 CDN방식 연결-->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<!--부트스트랩 CDN 방식-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/flat.min.js"></script>
+	<script src="js/main.js"></script>
+
+</head>
+
+<body>
+	<div id="wrap">
+		<header class="hd">
+			<input type="checkbox" class="ck_item" id="ck1">
+			<label for="ck1" class="menu" title="메뉴">
+			</label>
+			<nav id="menu_col">
+				<label for="ck1" class="close"></label>
+				<ul>
+					<li class="menu_dep1">
+						<a href="#" class="mMenu">나의 진료정보</a>
+						<ul class="m_sub">
+							<li><a href="">예약</a></li>
+							<li><a href="">예약조회 및 취소</a></li>
+							<li><a href="">진료비 결제</a></li>
+							<li><a href="">Health4U</a></li>
+							<li><a href="">나의 타임라인</a></li>
+							<li><a href="">관심콘텐츠</a></li>
+							<li><a href="">처방동영상</a></li>
+							<li><a href="">증명서발급</a></li>
+							<li><a href="">고객의 소리</a></li>
+							<li><a href="">개인정보</a></li>
+							<li><a href="">기부현황조회</a></li>
+						</ul>
+					</li>
+					<li class="menu_dep1">
+						<a href="#" class="mMenu">진료안내</a>
+						<ul class="m_sub">
+							<li><a href="">진료과</a></li>
+							<li><a href="">진료지원부서</a></li>
+							<li><a href="">의료진</a></li>
+							<li><a href="">외래진료</a></li>
+							<li><a href="">외래진료일정표</a></li>
+							<li><a href="">당일수술센터</a></li>
+							<li><a href="">응급의료센터</a></li>
+							<li><a href="">가정간호</a></li>
+							<li><a href="">입원/퇴원</a></li>
+							<li><a href="">병문안(면회)</a></li>
+							<li><a href="">건강검진안내</a></li>
+							<li><a href="">Outcomes Book</a></li>
+						</ul>
+					</li>
+					<li class="menu_dep1">
+						<a href="#" class="mMenu">병원소개</a>
+						<ul class="m_sub">
+							<li><a href="">병원소개</a></li>
+							<li><a href="">층별안내</a></li>
+							<li><a href="">병원소식</a></li>
+							<li><a href="">편의시설</a></li>
+							<li><a href="">SPACE U</a></li>
+							<li><a href="">공공의료사업단</a></li>
+							<li><a href="">발전후원회</a></li>
+							<li><a href="">주요전화번호안내</a></li>
+							<li><a href="">찾아오시는길</a></li>
+						</ul>
+					</li>
+					<li class="menu_dep1">
+						<a href="#" class="mMenu">공지사항</a>
+					</li>
+					<li class="menu_dep1">
+						<a href="#" class="mMenu">건강정보</a>
+						<ul class="m_sub">
+							<li><a href="">건강강좌</a></li>
+							<li><a href="">HEALTH PLUS</a></li>
+							<li><a href="">나음진</a></li>
+							<li><a href="">검사안내 동영상</a></li>
+						</ul>
+					</li>
+					<li class="menu_dep1">
+						<a href="#" class="mMenu">바로가기</a>
+						<ul class="m_sub">
+							<li><a href="">암센터</a></li>
+							<li><a href="">뇌신경센터</a></li>
+							<li><a href="">진료협력센터</a></li>
+							<li><a href="">건강증진센터</a></li>
+							<li><a href="">채용</a></li>
+							<li><a href="">장례식장</a></li>
+							<li><a href="">연구부문</a></li>
+							<li><a href="">의학자료정보실</a></li>
+							<li><a href="">공공의료사업단</a></li>
+							<li><a href="">발전후원회</a></li>
+							<li><a href="">국제진료센터</a></li>
+							<li><a href="">헬스케어혁신파크</a></li>
+							<li><a href="">권역심뇌혈관질환센터</a></li>
+							<li><a href="">아토피·천식교육 정보센터</a></li>
+							<li><a href="">알리오</a></li>
+							<li><a href="">정규직 전환 알림방</a></li>
+						</ul>
+					</li>
+					<li class="menu_dep1">
+						<a href="#" class="mMenu">정보공개</a>
+					</li>
+				</ul>
+				<span class="tel">대표전화 : 1588-3369 <br> 말로거는 전화 : 1641 누르고 '분당서울대병원'이라고 말하세요.</span>
+			</nav>
+			<div class="logo" title="분당서울대학교병원">
+				<a href="index.html"></a>
+			</div>
+			<div class="hd_btn">
+				<div class="login" title="로그인"><a href="">로그인</a></div>
+				<div class="signUp" title="회원가입"><a href="">회원가입</a></div>
+				<div class="sitemap" title="사이트맵"><a href="">사이트맵</a></div>
+				<div class="language" title="Language">
+					<select name="">
+						<option value="option1">language</option>
+						<option value="option2">english</option>
+					</select>
+				</div>
+			</div>
+			<button class="search" title="검색"></button>
+			<div class="gnb">
+				<ul>
+					<li class="gnb_dep1">
+						<a href="#">진료정보</a>
+						<ul class="sub">
+							<li><a href="">예약</a></li>
+							<li><a href="">예약조회 및 취소</a></li>
+							<li><a href="">진료비 결제</a></li>
+							<li><a href="">Health4U</a></li>
+							<li><a href="">나의 타임라인</a></li>
+							<li><a href="">관심콘텐츠</a></li>
+							<li><a href="">처방동영상</a></li>
+							<li><a href="">증명서발급</a></li>
+							<li><a href="">고객의 소리</a></li>
+							<li><a href="">개인정보</a></li>
+							<li><a href="">기부현황조회</a></li>
+						</ul>
+					</li>
+					<li class="gnb_dep1">
+						<a href="#">진료안내</a>
+						<ul class="sub">
+							<li><a href="">진료과</a></li>
+							<li><a href="">진료지원부서</a></li>
+							<li><a href="">의료진</a></li>
+							<li><a href="">외래진료</a></li>
+							<li><a href="">외래진료일정표</a></li>
+							<li><a href="">당일수술센터</a></li>
+							<li><a href="">응급의료센터</a></li>
+							<li><a href="">가정간호</a></li>
+							<li><a href="">입원/퇴원</a></li>
+							<li><a href="">병문안(면회)</a></li>
+							<li><a href="">건강검진안내</a></li>
+							<li><a href="">Outcomes Book</a></li>
+						</ul>
+					</li>
+					<li class="gnb_dep1">
+						<a href="#">병원소개</a>
+						<ul class="sub">
+							<li><a href="">병원소개</a></li>
+							<li><a href="">층별안내</a></li>
+							<li><a href="">병원소식</a></li>
+							<li><a href="">편의시설</a></li>
+							<li><a href="">SPACE U</a></li>
+							<li><a href="">공공의료사업단</a></li>
+							<li><a href="">발전후원회</a></li>
+							<li><a href="">주요전화번호안내</a></li>
+							<li><a href="">찾아오시는길</a></li>
+						</ul>
+					</li>
+					<li class="gnb_dep1">
+						<a href="#">건강정보</a>
+						<ul class="sub">
+							<li><a href="">건강강좌</a></li>
+							<li><a href="">HEALTH PLUS</a></li>
+							<li><a href="">나음진</a></li>
+							<li><a href="">검사안내 동영상</a></li>
+						</ul>
+					</li>
+					<li class="gnb_dep1">
+						<a href="#">바로가기</a>
+						<ul class="sub">
+							<li><a href="">암센터</a></li>
+							<li><a href="">뇌신경센터</a></li>
+							<li><a href="">진료협력센터</a></li>
+							<li><a href="">건강증진센터</a></li>
+							<li><a href="">채용</a></li>
+							<li><a href="">장례식장</a></li>
+							<li><a href="">연구부문</a></li>
+							<li><a href="">의학자료정보실</a></li>
+							<li><a href="">공공의료사업단</a></li>
+							<li><a href="">발전후원회</a></li>
+							<li><a href="">국제진료센터</a></li>
+							<li><a href="">헬스케어혁신파크</a></li>
+							<li><a href="">권역심뇌혈관질환센터</a></li>
+							<li><a href="">아토피·천식교육 정보센터</a></li>
+							<li><a href="">알리오</a></li>
+							<li><a href="">정규직 전환 알림방</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<div class="section_wrap">
+			<section class="right_side_btn">
+				<div class="r_btn">
+					<ul>
+						<li>
+							<a href="#" title="의료진찾기">
+								<span class="ico1"></span>
+								<span class="txt">의료진찾기</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" title="외래진료일정표">
+								<span class="ico2"></span>
+								<span class="txt">외래진료일정표</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" title="찾아오시는길">
+								<span class="ico3"></span>
+								<span class="txt">찾아오시는길</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" title="증명서 발급">
+								<span class="ico4"></span>
+								<span class="txt">증명서 발급</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" title="블로그">
+								<span class="ico5"></span>
+								<span class="txt">블로그</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" title="페이스북">
+								<span class="ico6"></span>
+								<span class="txt">페이스북</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" title="유튜브">
+								<span class="ico7"></span>
+								<span class="txt">유튜브</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="t_btn">
+					<a href="#">
+						<span class="txt">맨위로</span>
+					</a>
+				</div>
+			</section>
+			<section class="main_wrap">
+				<div class="main_box">
+					<div class="main_box_wrap">
+						<div class="main_box_01">
+							<h3>간편상담예약</h3>
+							<form action="" class="frm1">
+								<input type="text" name="search" placeholder="000-0000-0000" id="keyword" class="in_data">
+								<input type="submit" value="예약하기" class="search_btn">
+							</form>
+						</div>
+						<div class="main_box_02">
+							<a href="#">
+								<h3>예약현황조회</h3>
+								<p>진료예약현황을 조회</p>
+								<span class="ico2"></span>
+							</a>
+						</div>
+						<div class="main_box_03">
+							<a href="#">
+								<h3>온라인예약</h3>
+								<p>온라인으로 진료예약 진행</p>
+								<span class="ico3"></span>
+							</a>
+						</div>
+						<div class="main_box_04">
+							<a href="#">
+								<h3>진료비결제</h3>
+								<p>온라인으로 진료비 결제진행</p>
+								<span class="ico4"></span>
+							</a>
+						</div>
+						<div class="main_box_05">
+							<a href="#">
+								<h3>외래진료 일정표</h3>
+								<p>진료과별 진료일정 확인</p>
+								<span class="ico5"></span>
+							</a>
+						</div>
+						<div class="main_box_06">
+							<a href="#">
+								<h3>Health4U</h3>
+								<p>나의 진료기록 조회</p>
+								<span class="ico6"></span>
+							</a>
+						</div>
+						<div class="main_box_07">
+							<a href="#">
+								<h3>처방동영상</h3>
+								<p>나의 처방동영상 확인</p>
+								<span class="ico7"></span>
+							</a>
+						</div>
+						<div class="main_box_08">
+							<a href="#">
+								<h3>찾아오시는길</h3>
+								<p>지하철, 버스, 자동차, 기차</p>
+								<span class="ico8"></span>
+							</a>
+						</div>
+						<div class="main_box_09"></div>
+					</div>
+				</div>
+				<div class="con_box">
+					<div class="con_box_wrap">
+						<div class="con_box_01">
+							<div class="left">
+								<h3>의료진 찾기</h3>
+								<form action="" class="frm2">
+									<div>
+										<input type="radio" name="item" value="center1" id="it1" class="btn">
+										<input type="radio" name="item" value="medical" id="it2" class="btn">
+										<label for="it1" class="con_btn btn1">
+											특성화센터
+										</label>
+										<label for="it2" class="con_btn btn2">
+											진료과
+										</label>
+									</div>
+									<div>
+										<input type="text" name="search" placeholder="" class="in_data">
+										<input type="submit" value="찾기" class="search_btn">
+									</div>
+								</form>
+							</div>
+							<div class="right">
+								<h3>진료과 찾기</h3>
+								<form action="" class="frm2">
+									<div>
+										<input type="radio" name="item" value="center1" id="it3" class="btn">
+										<input type="radio" name="item" value="medical" id="it4" class="btn">
+										<input type="radio" name="item" value="center2" id="it5" class="btn">
+										<label for="it3" class="con_btn btn3">
+											특성화센터
+										</label>
+										<label for="it4" class="con_btn btn4">
+											진료과
+										</label>
+										<label for="it5" class="con_btn btn5">
+											협진센터
+										</label>
+									</div>
+									<input type="text" name="search" placeholder="" class="in_data">
+									<input type="submit" value="찾기" class="search_btn">
+								</form>
+							</div>
+						</div>
+						<div class="con_box_02">
+							<ul>
+								<li class="it_box_01">
+									<a href="#">
+										<span class="ico1"></span>
+										<span class="txt">외래진료 안내</span>
+									</a>
+								</li>
+								<li class="it_box_02">
+									<a href="#">
+										<span class="ico2"></span>
+										<span class="txt">증명서 발급 안내</span>
+									</a>
+								</li>
+								<li class="it_box_03">
+									<a href="#">
+										<span class="ico3"></span>
+										<span class="txt">건강검진 안내</span>
+									</a>
+								</li>
+								<li class="it_box_04">
+									<a href="#">
+										<span class="ico4"></span>
+										<span class="txt">Outcomes Book</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="main_bg"></div>
+			</section>
+			<section class="slider">
+				<div class="slider_wrap">
+					<h2 class="title">SNUBH&nbsp;Center</h2>
+					<ul class="vs_lst">
+						<li class="item1">
+							<div class="vs_img"></div>
+							<div class="vs_con">
+								<h3 class="vs_tit">암센터</h3>
+								<h5 class="vs_sub">세상 모든 이에게 건강과 행복을!</h5>
+								<p class="vs_txt">2008년 6월 암센터 진료를 시작한 이래,<br>
+									암환자들의 다양한 요구에 부응하여 전문적이면서도<br>
+									고급화된 통합진료와 삶의 질 향상을 위하여<br>
+									분당서울대학교병원이 2013년 새롭게 출발하였습니다.<br>
+									분당서울대학교병원 암센터는 World BEST in 2020 이라는<br>
+									비전 하에 암환자들이 행복하도록 최선을 다하고자 합니다.</p>
+								<a href="#" class="vs_more">
+									<span class="more_txt">바로가기</span>
+								</a>
+							</div>
+						</li>
+						<li class="item2">
+							<div class="vs_img"></div>
+							<div class="vs_con">
+								<h3 class="vs_tit">뇌신경센터</h3>
+								<h5 class="vs_sub">세계 최고의 뇌신경병원을 통한 뇌신경계 질환 정복</h5>
+								<p class="vs_txt">분당서울대학교병원은 2003년 5월 국내 최초로 뇌신경센터를<br>
+									설립하여 한층 더 높은 차원의 진단과 치료를 제공하기 위해<br>
+									뇌신경계질환을 통합 관리하여 집중 치료하는<br>
+									세계 최고 수준의 뇌신경센터를 운영하고 있습니다.</p>
+								<a href="#" class="vs_more">
+									<span class="more_txt">바로가기</span>
+								</a>
+							</div>
+						</li>
+						<li class="item3">
+							<div class="vs_img"></div>
+							<div class="vs_con">
+								<h3 class="vs_tit">노인의료센터</h3>
+								<h5 class="vs_sub">노인의료센터에 오신 것을 환영합니다.</h5>
+								<p class="vs_txt">분당서울대학교병원 노인의료센터에서는 노인병내과, 신경과,<br>
+									재활의학과, 정신건강의학과의 전문의와 노인 전문간호사, 영양사,<br>
+									약사, 사회복지사 등으로 구성된 전문팀이 환자 개개인의 특성과<br>
+									상황에 맞는 개별화된 진료를 제공하여 진료의 효율성을<br>
+									높이고 있습니다.</p>
+								<a href="#" class="vs_more">
+									<span class="more_txt">바로가기</span>
+								</a>
+							</div>
+						</li>
+						<li class="item4">
+							<div class="vs_img"></div>
+							<div class="vs_con">
+								<h3 class="vs_tit">심장혈관센터</h3>
+								<h5 class="vs_sub">심장혈관센터에 오신 것을 환영합니다.</h5>
+								<p class="vs_txt">분당서울대학교병원 심장혈관센터는 생활 수준의 향상과<br>
+									서구화된 생활 패턴으로 인해 나날이 증가하고 있는 심장,<br>
+									혈관 질환을 효과적으로 치료하고, 최상의 의료서비스를<br>
+									제공하기 위해 순환기내과와 흉부외과 외 여러 의료진이<br>
+									함께 모여 협동 진료하는 센터입니다.</p>
+								<a href="#" class="vs_more">
+									<span class="more_txt">바로가기</span>
+								</a>
+							</div>
+						</li>
+						<li class="item5">
+							<div class="vs_img"></div>
+							<div class="vs_con">
+								<h3 class="vs_tit">폐센터</h3>
+								<h5 class="vs_sub">폐센터에 오신 것을 환영합니다.</h5>
+								<p class="vs_txt">분당서울대학교병원은 2003년 개원 시부터 센터 중심의 진료를<br>
+									표방하였으며, 그 중심에 저희 폐센터가 자리하고 있습니다.<br>
+									이름뿐인 센터가 아니라 환자를 가운데에 두고 전문 의료진이<br>
+									감싸 안는 형태인 실질적인 센터 진료로 국내 최고의 폐센터로<br>
+									자부하고 있습니다.</p>
+								<a href="#" class="vs_more">
+									<span class="more_txt">바로가기</span>
+								</a>
+							</div>
+						</li>
+						<li class="item6">
+							<div class="vs_img"></div>
+							<div class="vs_con">
+								<h3 class="vs_tit">관절센터</h3>
+								<h5 class="vs_sub">관절센터에 오신 것을 환영합니다.</h5>
+								<p class="vs_txt">분당서울대학교병원 관절센터는 골, 관절, 신경, 근육 질환과<br>
+									외상에 대한 종합적인 진료, 교육, 연구를 목표로 2003년 5월 10일<br>
+									분당서울대학교병원이 진료를 시작하면서 동시에 개소되었습니다.<br>
+									관절 질환에 대해서 국제적인 연구업적을 축적해온 총 14명의<br>
+									서울대학교 의과대학 교수진(정형외과 10명, 진단방사선과 3명,<br>
+									류마티스내과 1명)이 참여하여 설립되었습니다.</p>
+								<a href="#" class="vs_more">
+									<span class="more_txt">바로가기</span>
+								</a>
+							</div>
+						</li>
+						<li class="item7">
+							<div class="vs_img"></div>
+							<div class="vs_con">
+								<h3 class="vs_tit">척추센터</h3>
+								<h5 class="vs_sub">척추센터에 오신 것을 환영합니다.</h5>
+								<p class="vs_txt">2008년 6월 척추센터를 개소하였고 척추 질환을 다루는 모든<br>
+									진료 분야 즉, 신경외과, 정형외과, 재활의학과, 신경과,<br>
+									마취통증의학과, 영상의학과의 전문 의료진이 유기적으로<br>
+									상호 연계할 수 있는 통합 진료 시스템을 갖추고 최적의<br>
+									척추 질환 의료 서비스를 제공하고 있습니다.</p>
+								<a href="#" class="vs_more">
+									<span class="more_txt">바로가기</span>
+								</a>
+							</div>
+						</li>
+						<li class="item8">
+							<div class="vs_img"></div>
+							<div class="vs_con">
+								<h3 class="vs_tit">소화기센터</h3>
+								<h5 class="vs_sub">소화기센터에 오신 것을 환영합니다.</h5>
+								<p class="vs_txt">소화기센터는 식도, 위, 소장, 대장, 직장에서 발생하는 각종 질환<br>
+									및 간, 담낭을 포함한 담도계, 췌장 등의 이상에 대한 진단 및<br>
+									치료를 담당하는 과입니다. 내시경을 이용한 각종 시술 즉,<br>
+									(수면)위내시경, (수면)대장내시경, 췌담도내시경 등의 진단 내시경<br>
+									뿐 아니라 용종절제술 등을 포함한 각종 치료 내시경을<br>
+									시행하고 있습니다.</p>
+								<a href="#" class="vs_more">
+									<span class="more_txt">바로가기</span>
+								</a>
+							</div>
+						</li>
+						<li class="item9">
+							<div class="vs_img"></div>
+							<div class="vs_con">
+								<h3 class="vs_tit">어지럼증센터</h3>
+								<h5 class="vs_sub">어지럼증센터에 오신 것을 환영합니다.</h5>
+								<p class="vs_txt">"분당서울대병원은 급속히 증가하고 있는 어지럼증 환자들에게<br>
+									신속하고 체계적인 진료를 제공하기 위해 신경과, 이비인후과,<br>
+									정신과로 구성된 국내 최대의 어지럼증 통합진료 시스템을<br>
+									구축하였습니다. 어지럼증 센터의 전문 의료진은 개개인에게<br>
+									최적화된 진료를 제공할 것이며, 세계 최고의 센터를 목표로<br>
+									최선의 노력을 다하겠습니다."</p>
+								<a href="#" class="vs_more">
+									<span class="more_txt">바로가기</span>
+								</a>
+							</div>
+						</li>
+						<li class="item10">
+							<div class="vs_img"></div>
+							<div class="vs_con">
+								<h3 class="vs_tit">건강증진센터</h3>
+								<h5 class="vs_sub">건강증진센터에 오신 것을 환영합니다.</h5>
+								<p class="vs_txt">국내 최고의 전문 의료진의 풍부한 임상경험을 통한 신뢰할 수<br>
+									있는 정확한 진단과 최적의 치료는 건강증진센터만의 자랑이자<br>
+									자부심입니다. 내외국인 모두가 만족할 수 있는 혁신적인 시스템<br>
+									운영과 함께 결과 상담 이후에도 전문화된 클리닉을 통해<br>
+									체계적이고 지속적인 건강관리가 가능하며 언제든지 모든 진료과<br>
+									교수진의 신속한 선진 의술의 혜택을 누리실 수 있습니다.</p>
+								<a href="#" class="vs_more">
+									<span class="more_txt">바로가기</span>
+								</a>
+							</div>
+						</li>
+						<li class="item11">
+							<div class="vs_img"></div>
+							<div class="vs_con">
+								<h3 class="vs_tit">국제진료센터</h3>
+								<h5 class="vs_sub">국제진료센터에 오신 것을 환영합니다.</h5>
+								<p class="vs_txt">분당서울대학교병원 국제진료센터는 외국인 환자들의 초기 일차<br>
+									진료,언어지원,문화·심리적 지원,타부서와의 조율 등을 통하여<br>
+									환자들이 안심하고 우수한 분당서울대학교병원의 진료를 받을 수<br>
+									있도록 최선을 다하고 있습니다.</p>
+								<a href="#" class="vs_more">
+									<span class="more_txt">바로가기</span>
+								</a>
+							</div>
+						</li>
+						<li class="item12">
+							<div class="vs_img"></div>
+							<div class="vs_con">
+								<h3 class="vs_tit">고위험 산모·신생아 통합치료센터</h3>
+								<h5 class="vs_sub">고위험 산모·신생아 통합치료센터에 오신 것을 환영합니다.</h5>
+								<p class="vs_txt">분당서울대학교병원은 2016년 보건복지부로부터 경기 권역 내<br>
+									최초로 고위험 산모•신생아 통합치료센터로 지정되었습니다.<br>
+									고위험 산모•신생아 통합치료센터는 임신에서 출산까지 모든<br>
+									과정에 걸쳐 중증 복합 질환을 가진 산모와 태아, 그리고 신생아를<br>
+									체계적으로 치료 가능하며, 최신 의료장비와 시설, 분야별 전문 <br>
+									의료진을 갖추고 있어, 산모와 아기의 건강을 위해 최고 수준의<br>
+									의료 서비스를 제공할 수 있도록 노력하고 있습니다.</p>
+								<a href="#" class="vs_more">
+									<span class="more_txt">바로가기</span>
+								</a>
+							</div>
+						</li>
+						<li class="item13">
+							<div class="vs_img"></div>
+							<div class="vs_con">
+								<h3 class="vs_tit">소아수술센터</h3>
+								<h5 class="vs_sub">소아수술센터에 오신 것을 환영합니다.</h5>
+								<p class="vs_txt">세계 의료를 선도하는 분당서울대학교병원 소아수술 전문센터<br>
+									세계 최고의 소아수술 통합전문센터에서 여러분들의 건강과<br>
+									행복을 찾아드리겠습니다.</p>
+								<a href="#" class="vs_more">
+									<span class="more_txt">바로가기</span>
+								</a>
+							</div>
+						</li>
+					</ul>
+					<div class="vs_box"></div>
+					<ul class="btn_box">
+						<li class="item1 on"><button></button></li>
+						<li class="item2"><button></button></li>
+						<li class="item3"><button></button></li>
+						<li class="item4"><button></button></li>
+						<li class="item5"><button></button></li>
+						<li class="item6"><button></button></li>
+						<li class="item7"><button></button></li>
+						<li class="item8"><button></button></li>
+						<li class="item9"><button></button></li>
+						<li class="item10"><button></button></li>
+						<li class="item11"><button></button></li>
+						<li class="item12"><button></button></li>
+						<li class="item13"><button></button></li>
+					</ul>
+				</div>
+			</section>
+			<section class="article">
+				<h2 class="title">SNUBH&nbsp;Health&nbsp;Plus</h2>
+				<ul class="arti_lst">
+					<li class="arti_box">
+						<div class="arti tit_box_01">
+							<span class="tit">힐링스토리</span>
+							<a href="#" class="more">＋</a>
+						</div>
+						<div class="sub_box">
+							<a href="#">
+								<span class="txt">다문화 가정과 함께하는<br>
+									든든한 의료 가족들</span>
+								<img src="./data/images/article/arti_01.png" alt="">
+							</a>
+						</div>
+					</li>
+					<li class="arti_box">
+						<div class="arti tit_box_02">
+							<span class="tit">헬스포커스</span>
+							<a href="#" class="more">＋</a>
+						</div>
+						<div class="sub_box">
+							<a href="#">
+								<span class="txt">치료와 관리로 잡는다,<br>암성 통증</span>
+								<img src="./data/images/article/arti_02.png" alt="">
+							</a>
+						</div>
+					</li>
+					<li class="arti_box">
+						<div class="arti tit_box_03">
+							<span class="tit">헬스라이프</span>
+							<a href="#" class="more">＋</a>
+						</div>
+						<div class="sub_box">
+							<a href="#">
+								<span class="txt">90년대 음악과 유튜브의 만남,<br> 온라인 탑골공원</span>
+								<img src="./data/images/article/arti_03.png" alt="">
+							</a>
+						</div>
+					</li>
+					<li class="arti_box">
+						<div class="arti tit_box_04">
+							<span class="tit">건강강좌</span>
+							<a href="#" class="more">＋</a>
+						</div>
+						<div class="sub_box">
+							<a href="#">
+								<span class="txt">기능성 소화불량증과<br>
+									위식도역류질환<br>
+									공개건강강좌</span>
+								<span class="sub_txt">주제: 기능성 소화불량증, 위식도역류질환<br>
+									강사: 김나영 교수<br>
+									일정: 2019년 12월 18일 15:00~16:00<br>
+									장소: 1동 지하1층 대강당</span>
+							</a>
+						</div>
+					</li>
+					<li class="arti_box">
+						<div class="arti tit_box_05">
+							<span class="tit">스누비안존</span>
+							<a href="#" class="more">＋</a>
+						</div>
+						<div class="sub_box">
+							<a href="#">
+								<span class="txt">치유, 희망을 배우는 곳,<br>
+									암정보교육센터</span>
+								<img src="./data/images/article/arti_04.png" alt="">
+							</a>
+						</div>
+					</li>
+					<li class="arti_box">
+						<div class="arti tit_box_06">
+							<span class="tit">나음진</span>
+							<a href="#" class="more">＋</a>
+						</div>
+						<div class="sub_box">
+							<a href="#">
+								<span class="txt">건강문화 매거진<br>
+									머물다 50호 2019겨울</span>
+								<img src="./data/images/article/arti_05.png" alt="">
+							</a>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<section class="notice">
+				<div class="noti_wrap">
+					<div class="noti_tit_box">공지사항</div>
+					<ul>
+						<li class="noti_box">
+							<a href="#">코로나바이러스 감염증-19(COVID-19) 관련 안내<span class="more">＋</span></a>
+						</li>
+						<li class="noti_box">
+							<a href="#">홈페이지 서비스 이용가이드<span class="more">＋</span></a>
+						</li>
+						<li class="noti_box">
+							<a href="#">2020년 설 연휴기간 휴진 안내<span class="more">＋</span></a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="banner">
+				<div class="banner_wrap">
+					<ul>
+						<li class="banner_box">
+							<a href="#">
+								<span class="ico1"></span>
+								<span class="txt">연구부문</span>
+							</a>
+						</li>
+						<li class="banner_box">
+							<a href="#">
+								<span class="ico2"></span>
+								<span class="txt">국제진료센터</span>
+							</a>
+						</li>
+						<li class="banner_box">
+							<a href="#">
+								<span class="ico3"></span>
+								<span class="txt">진료협력센터</span>
+							</a>
+						</li>
+						<li class="banner_box">
+							<a href="#">
+								<span class="ico4"></span>
+								<span class="txt">공공의료사업단</span>
+							</a>
+						</li>
+						<li class="banner_box">
+							<a href="#">
+								<span class="ico5"></span>
+								<span class="txt">발전후원회</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+		<footer class="ft">
+			<div class="ft_wrap">
+				<div class="ft_nav">
+					<ul>
+						<li>
+							<a href="#">개인정보처리방침</a>
+						</li>
+						<li>
+							<a href="#">환자권리장전</a>
+						</li>
+						<li>
+							<a href="#">고객헌장</a>
+						</li>
+						<li>
+							<a href="#">고객의 소리</a>
+						</li>
+						<li>
+							<a href="#">FAQ</a>
+						</li>
+						<li>
+							<a href="#">ALIO</a>
+						</li>
+					</ul>
+				</div>
+				<div class="address">
+					13620 경기도 성남시 분당구 구미로173번길 82 법인명(단체명):분당서울대학교병원 대표자명:백롱민<br>
+					사업자등록번호:129-82-06989 <a href="tel:1588-3369">대표전화:1588-3369</a> / <a href="tel:1641">말로거는 전화 : 1641 </a>누르고 '분당서울대병원' 이라고 말하세요.
+				</div>
+				<div class="copyright">
+					Copyright &copy;분당서울대학교병원 ALL RIGHT RESERVED
+				</div>
+				<div class="ft_site">
+					<form action="">
+						<select name="">
+							<option value="">특성화센터/진료과</option>
+							<option value="option1">암센터</option>
+							<option value="option2">뇌신경센터</option>
+							<option value="option2">노인의료센터</option>
+							<option value="option2">심장혈관센터</option>
+							<option value="option2">폐센터</option>
+							<option value="option2">관절센터</option>
+							<option value="option2">척추센터</option>
+							<option value="option2">소화기센터</option>
+							<option value="option2">어지럼증센터</option>
+							<option value="option2">건강증진센터</option>
+							<option value="option2">가정의학과</option>
+							<option value="option2">감염내과</option>
+							<option value="option2">내분비내과</option>
+							<option value="option2">노인병내과</option>
+							<option value="option2">류마티스내과</option>
+							<option value="option2">마취통증의학과</option>
+							<option value="option2">방사선종양학과</option>
+							<option value="option2">병리과</option>
+							<option value="option2">비뇨의학과</option>
+							<option value="option2">산부인과</option>
+							<option value="option2">성형외과</option>
+							<option value="option2">소아청소년과</option>
+							<option value="option2">소화기내과</option>
+							<option value="option2">순환기내과</option>
+							<option value="option2">신경과</option>
+							<option value="option2">신경외과</option>
+							<option value="option2">신장내과</option>
+							<option value="option2">안과</option>
+							<option value="option2">알레르기내과</option>
+							<option value="option2">영상의학과</option>
+							<option value="option2">외과</option>
+							<option value="option2">응급의학과</option>
+							<option value="option2">이비인후과</option>
+							<option value="option2">재활의학과</option>
+							<option value="option2">정신건강의학과</option>
+							<option value="option2">정형외과</option>
+							<option value="option2">진단검사의학과</option>
+							<option value="option2">치과</option>
+							<option value="option2">피부과</option>
+							<option value="option2">핵의학과</option>
+							<option value="option2">혈액종양내과</option>
+							<option value="option2">호흡기내과</option>
+							<option value="option2">흉부외과</option>
+						</select>
+						<input type="submit" value="바로가기">
+						<select name="">
+							<option value="">협진센터/클리닉</option>
+							<option value="option2">간암센터</option>
+							<option value="option2">감마나이프센터</option>
+							<option value="option2">갑상선암센터</option>
+							<option value="option2">고위험 산모·신생아 통합치료센터</option>
+							<option value="option2">근골격종양센터</option>
+							<option value="option2">노인암센터</option>
+							<option value="option2">뇌신경재활센터</option>
+							<option value="option2">뇌전증·수면센터</option>
+							<option value="option2">뇌종양센터</option>
+							<option value="option2">뇌혈관센터</option>
+							<option value="option2">뇌혈관시술센터</option>
+							<option value="option2">담도·췌장암센터</option>
+							<option value="option2">대장암센터</option>
+							<option value="option2">두경부암센터</option>
+							<option value="option2">모발센터</option>
+							<option value="option2">백반증센터</option>
+							<option value="option2">부인암센터</option>
+							<option value="option2">비뇨기·전립선암센터</option>
+							<option value="option2">비만대사센터</option>
+							<option value="option2">소아뇌신경센터</option>
+							<option value="option2">소아수술센터</option>
+							<option value="option2">소아청소년 혈액종양센터</option>
+							<option value="option2">수면센터</option>
+							<option value="option2">식도암센터</option>
+							<option value="option2">신경계중환자치료센터</option>
+							<option value="option2">신경인지행동센터</option>
+							<option value="option2">아토피천식교육정보센터</option>
+							<option value="option2">암통합지지센터</option>
+							<option value="option2">위암센터</option>
+							<option value="option2">유방암센터</option>
+							<option value="option2">종양내과센터</option>
+							<option value="option2">척수·신경근육센터</option>
+							<option value="option2">척추종양센터</option>
+							<option value="option2">청각재활센터</option>
+							<option value="option2">치매·경도인지장애센터</option>
+							<option value="option2">파킨슨센터</option>
+							<option value="option2">폐암센터</option>
+							<option value="option2">혈액암센터</option>
+							<option value="option2">희귀질환센터</option>
+							<option value="option2">당뇨족창상클리닉</option>
+							<option value="option2">대동맥류혈관클리닉</option>
+							<option value="option2">발달·자폐·사회성 클리닉</option>
+							<option value="option2">슬관절클리닉</option>
+							<option value="option2">어깨관절클리닉</option>
+						</select>
+						<input type="submit" value="바로가기">
+						<select name="">
+							<option value="">패밀리사이트</option>
+							<option value="option2">서울대학교의과대학</option>
+							<option value="option2">서울대학교병원</option>
+							<option value="option2">서울특별시 보라매병원</option>
+							<option value="option2">서울대학교병원 강남센터</option>
+							<option value="option2">연구부문</option>
+							<option value="option2">임상시험센터</option>
+							<option value="option2">진료협력센터</option>
+							<option value="option2">공공의료사업단</option>
+							<option value="option2">발전후원회</option>
+							<option value="option2">국제진료센터</option>
+							<option value="option2">헬스케어혁신파크</option>
+						</select>
+						<input type="submit" value="바로가기">
+					</form>
+				</div>
+				<div class="logo_mark">
+					<ul>
+						<li>
+							<img src="./data/images/logo_mark/mark1.png" alt="">
+							<p>인증번호 : ISMS 18-020<br>
+								유효기간 : 2018.04.06 ~ 2021.04.05<br>
+								인증범위 : 의료정보시스템(OCS,EMR)<br>
+								          및 홈페이지 서비스 운영</p>
+						</li>
+						<li>
+							<img src="./data/images/logo_mark/mark2.png" alt="">
+							<p>인증번호 : IS 679936<br>
+								유효기간 : 2017.09.15<br>
+								　　　　   ~ 2020.09.14</p>
+						</li>
+						<li>
+							<img src="./data/images/logo_mark/mark3.png" alt="">
+							<p>과학기술정보통신부<br>
+								WEB ACCESSIBILITY</p>
+						</li>
+						<li>
+							<img src="./data/images/logo_mark/mark4.png" alt="">
+							<p>미국외 세계최초<br>
+								EMR 7단계 인증</p>
+						</li>
+						<li>
+							<img src="./data/images/logo_mark/mark5.png" alt="">
+							<p>보건복지부<br>
+								의료기관 인증</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body></html>
