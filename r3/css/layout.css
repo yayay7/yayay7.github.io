@@ -931,7 +931,7 @@ body {
 
 .ser_box3 a:hover h3,
 .ser_box3 a:active h3 {
-    font-size: 22.3px;
+    font-size: 23px;
     color: #fff;
 }
 
@@ -942,7 +942,7 @@ body {
 
 .ser_box3 a:hover ul li,
 .ser_box3 a:active ul li {
-    font-size: 16.2px;
+    font-size: 17px;
     color: #fff;
 }
 
@@ -1980,7 +1980,12 @@ body {
         display: block;
         width: 80px;
         height: 60px;
-        margin: 10px auto 0;
+        margin: 5px auto 0;
+    }
+
+    .ser_box1 ul li a:hover,
+    .ser_box1 ul li a:active {
+        font-size: 16px;
     }
 
     /*ser_box2*/
@@ -2003,7 +2008,7 @@ body {
     }
 
     .ser_box2 ul li a {
-        font-size: 12px;
+        font-size: 14px;
         padding: 25px 0;
     }
 
@@ -2015,6 +2020,11 @@ body {
         width: 80px;
         height: 60px;
         margin: 15px auto 0;
+    }
+
+    .ser_box2 ul li a:hover,
+    .ser_box2 ul li a:active {
+        font-size: 16px;
     }
 
     /*ser_box3*/
@@ -2039,7 +2049,7 @@ body {
 
     .ser_box3 a h3 {
         color: #d0d0d0;
-        font-size: 18px;
+        font-size: 16px;
         transition: all 0.5s;
     }
 
@@ -2070,6 +2080,16 @@ body {
     .ser_box3 a ul li:nth-child(1):before,
     .ser_box3 a ul li:nth-child(3):before {
         display: none;
+    }
+
+    .ser_box3 a:hover h3,
+    .ser_box3 a:active h3 {
+        font-size: 18px;
+    }
+
+    .ser_box3 a:hover ul li,
+    .ser_box3 a:active ul li {
+        font-size: 12.5px;
     }
 
     /*content2*/
@@ -2124,7 +2144,7 @@ body {
     }
 
     .listWrap .tit {
-        font-size: 14px;
+        font-size: 12px;
         margin-top: 5px;
     }
 
