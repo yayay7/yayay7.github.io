@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>파스퇴르</title>
+   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap">
+    <link rel="stylesheet" href="./css/font.css">
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/main.css">	
+	<!-- 파비콘 및 메타포 아이콘 적용 -->
+    <!-- 가장 작은 형태EX12.의 16x16 크기의 ico -->
+    <link rel="shortcut icon" href="./favicon/favicon.ico">
+    <!-- 가장 작은 형태의 16x16 크기의 png -->
+    <link rel="shortcut icon" href="./favicon/favicon_16x16.png" type="image/x-icon">
+    <!-- 일반 앱형태의 아이콘 설정 -->
+    <link rel="icon" href="./favicon/favicon.ico">
+    <link rel="icon" href="./favicon/favicon_16x16.png" sizes="16x16"> 
+    <link rel="icon" href="./favicon/favicon_32x32.png" sizes="32x32"> 
+    <link rel="icon" href="./favicon/favicon_48x48.png" sizes="48x48"> 
+    <link rel="icon" href="./favicon/favicon_64x64.png" sizes="64x64"> 
+    <link rel="icon" href="./favicon/favicon_128x128.png" sizes="128x128">
+    <!-- 아이폰 고해상도용 파비콘 152x152 -->
+    <link rel="apple-touch-icon-precomposed" href="./favicon/favicon_152.png">
+    
+    <!-- 인터넷 익스플로러용 타일 아이콘 144x144 -->
+    <meta name="msapplication-TileColor" content="#6aba70">	
+    <meta name="msapplication-TileImage" content="./favicon/favicon_144x144.png">
+    <!-- 모바일 웹앱 문서정보에 대한 설정 -->
+    <meta name="title" content="파스퇴르">
+    <meta name="auther" content="이성민">
+    <meta name="url" content="http://yayay7.dothome.co.kr/m">
+    <meta name="description" content="파스퇴르아이 · 파스퇴르몰 · 파스퇴르 Facebook · 프리미엄 멤버쉽 - 특별한 고객님을 위한 특별한 프리미엄 서비스 가입안내 · 파스퇴르 가정배달 - 집으로! 사무실로!">
+    <meta name="keywords" content="파스퇴르,파스퇴르아이,파스퇴르몰,파스퇴르Facebook,파스퇴르가정배달,파스퇴르우유,파스퇴르분유,파스퇴르이유식,파스퇴르음료">
+    <!-- 애플 어플 문서 정보 설정 -->
+    <meta name="apple-mobile-web-app-title" content="파스퇴르 - 우유 · 분유 · 이유식 · 음료 ">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 소셜에 문서정보 노출 설정 -->
+    <meta itemprop="name" content="파스퇴르">
+    <meta itemprop="description" content="파스퇴르아이 · 파스퇴르몰 · 파스퇴르 Facebook · 프리미엄 멤버쉽 - 특별한 고객님을 위한 특별한 프리미엄 서비스 가입안내 · 파스퇴르 가정배달 - 집으로! 사무실로!">
+    <meta itemprop="image" content="./favicon/favicon_256x256.png" >
+    <!-- 페이스북에 노출 설정 -->
+    <meta property="fb:app_id" content="APP_ID">
+   <!-- 카카오톡, 블로그 등의 크롤링으로 화면 미리보기 노출 -->
+    <meta property="og:type" content="Website">
+    <meta property="og:title" content="파스퇴르">
+    <meta property="og:url" content="./index.html">
+    <meta property="og:description" content="파스퇴르아이 · 파스퇴르몰 · 파스퇴르 Facebook · 프리미엄 멤버쉽 - 특별한 고객님을 위한 특별한 프리미엄 서비스 가입안내 · 파스퇴르 가정배달 - 집으로! 사무실로!">
+    <meta property="og:img" content="http://yayay7.dothome.co.kr/m/data/vs1.png"><!-- 썸네일이미지 . http://부터 시작하는 절대주소로 남겨야 함 -->
+	 <!--부트스트랩 CDN 방식-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <!--제이쿼리 파일 CDN방식 연결-->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="./script/jquery.min.js"></script>
+    <script src="./script/main.js"></script>        
+</head>
+
+<body>
+  <div id="wrap">
+	<header class="hd">
+		<input type="checkbox" class="ck_item" id="ck1">
+		<input type="checkbox" class="ck_item" id="ck2">
+		<div class="wrap1">
+			<ul>
+				<li class="login"><a href="login.html">로그인</a></li>
+				<li class="sc"><a href="sc.html">고객센터</a></li>
+			</ul>
+			<label for="ck1" class="toggle"></label>
+		</div>	
+		<div class="wrap2">
+		  <label for="ck2" class="menu"></label>
+		  <a href="index.html" class="logo"></a>
+        <button class="search"></button>
+      </div>
+      <nav id="t_nav">
+        <div class="top_btn">
+      	<label for="ck1" class="close"></label>
+        </div>
+      	<ul>
+      		<li class="item1">
+      		  <a href="#" class="dep2">
+                <span class="line ico1"></span>
+                <span class="in logo1"></span>
+                <span class="txt">임신/육아&nbsp;포탈</span>
+                <span class="btn"></span>
+      		    <span class="cir"></span>
+              </a>
+            </li>
+      		<li class="item1">
+      		  <a href="#" class="dep2">
+      		    <span class="line ico2"></span>
+      		    <span class="in logo2"></span>
+      		    <span class="txt">육아&nbsp;쇼핑몰</span>
+      		    <span class="btn"></span>
+      		    <span class="cir"></span>
+      		  </a>
+      		</li>
+      		<li class="item1">
+      		  <a href="#" class="dep2">
+      		    <span class="line ico3"></span>
+      		    <span class="in logo3"></span>
+      		    <span class="txt">프리미엄&nbsp;멤버쉽</span>
+      		    <span class="btn"></span>
+      		    <span class="cir"></span>
+      		  </a>
+      		</li>
+      	</ul>
+      </nav>
+		<nav id="gnb">
+		      <div class="top_btn">
+			     <a href="index.html" class="logo"></a>
+			     <label for="ck2" class="close"></label>
+			   </div>
+				<ul>
+					<li class="item1">
+					  <a href="#" class="dep1">회사소개</a>
+					</li>
+					<li class="item1">
+					  <a href="#" class="dep1">제품소개</a>
+					  <ul class="sub">
+					  	<li class="it1"><a href="sub2.html">-&nbsp;&nbsp;신제품</a></li>
+					  	<li class="it2"><a href="sub2.html">-&nbsp;&nbsp;분유/이유식제품</a></li>
+					  	<li class="it3"><a href="sub2.html">-&nbsp;&nbsp;우유제품</a></li>
+					  	<li class="it4"><a href="sub2.html">-&nbsp;&nbsp;발효유제품</a></li>
+					  	<li class="it5"><a href="sub2.html">-&nbsp;&nbsp;음료제품</a></li>
+					  	<li class="it6"><a href="sub2.html">-&nbsp;&nbsp;기타</a></li>
+					  </ul>
+					</li>
+					<li class="item1">
+					  <a href="#" class="dep1">가정배달</a>
+					  <ul class="sub">
+					  	<li class="it1"><a href="sub3.html">-&nbsp;&nbsp;가정배달&nbsp;신청</a></li>
+					  	<li class="it2"><a href="sub3.html">-&nbsp;&nbsp;주문내역&nbsp;확인</a></li>
+					  	<li class="it3"><a href="sub3.html">-&nbsp;&nbsp;대리점&nbsp;검색</a></li>
+					  </ul>
+					</li>
+					<li class="item1">
+					  <a href="#" class="dep1">홍보센터</a>
+					  <ul class="sub">
+					  	<li class="it1"><a href="sub4.html">-&nbsp;&nbsp;파스퇴르소식</a></li>
+					  	<li class="it2"><a href="sub4.html">-&nbsp;&nbsp;홍보영상</a></li>
+					  </ul>
+					</li>
+					<li class="item1">
+					  <a href="#" class="dep1">파스퇴르 스토리</a>
+					</li>
+				</ul>
+			</nav>
+	</header>		
+	<div class="slide">
+        <div class="slideList">
+            <a href="#"><img src="image/main/main_img1.png" alt="파스퇴르 바른목장 소프트요거트"></a>
+            <a href="#"><img src="image/main/main_img2.png" alt="파스퇴르 위드맘 분유"></a>
+        </div>
+        <div class="slideBtn">
+            <a href="#" id="btn1">1</a>
+            <a href="#" id="btn2">2</a>
+        </div>
+	</div>		
+	<div class="noti">
+           <h5 class="notiTit">공지사항</h5>
+           <ul class="noti_wrap">
+             <li>
+               <a href="#">
+                 <span class="notiCom">위드맘 산양 - 롯데마트 전점 ‘신규입점’</span>
+               </a>
+             </li>             
+             <li>
+               <a href="#">
+                 <span class="notiCom"></span>
+               </a>
+             </li>             
+           </ul>
+   </div>	
+	<nav class="shortcut">
+			<ul>
+				<li class="item1">
+				  <a href="#" rel="external"><!--외부링크-->
+				    <span class="ico1"></span>
+				    <span class="txt">제품소개</span>
+				  </a>
+				</li>
+				<li class="item2">
+				  <a href="#" rel="external">
+				    <span class="ico2"></span>
+				    <span class="txt">가정배달</span>
+				  </a>
+				</li>
+			</ul>
+	</nav>	
+	<section class="main">
+		<ul class="lst">
+			<li>
+				<a href="#">
+				   <span class="item1"></span>
+					<img src="./image/main/vs_2_1.png" alt="우리나라 최초의 저온살균 우유">
+					<span class="txt">우리나라 최초의<br> 저온살균 우유</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+				   <span class="item1"></span>
+					<img src="./image/main/vs_2_2.png" alt="엄마가 안심하고 먹이는 유아식">
+					<span class="txt">엄마가 안심하고<br> 먹이는 유아식</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+				   <span class="item1"></span>
+					<img src="./image/main/vs_2_3.png" alt="고객의 건강을 먼저 생각합니다">
+					<span class="txt">고객의 건강을<br> 먼저 생각합니다</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+				   <span class="item1"></span>
+					<img src="./image/main/vs_2_4.png" alt="플래그십 스토어 ‘파스퇴르 밀크바’">
+					<span class="txt">플래그십 스토어<br> ‘파스퇴르 밀크바’</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+   <section class="company">
+      <a href="#">
+         <img src="./image/main/vs_1.png" alt="파스퇴르 - 건강한 저온살균 우유">
+      </a>
+   </section>		
+   <section class="mv_page">
+        <h3 class="sec_tit">파스퇴르 youtube</h3>
+        <div id="mv_fr">
+            <video src="./image/video1.mp4" id="vdo1"></video>
+            <button id="play_btn"></button>
+        </div>
+   </section>	  
+   <script>
+    var vdo = document.getElementById("vdo1");   //#vdo1
+    var btn = document.getElementById("play_btn");  //#play_btn
+    btn.addEventListener("click", function(){
+        if(vdo.paused){//동영상이 멈춰있을 경우
+            vdo.play();
+            btn.style.opacity = 0;
+        } else {//그렇지 않으면(동영상이 플레이되고 있을 경우)
+            vdo.pause();//동영상멈춤
+            btn.style.opcity = 0.7;
+        }
+    });
+    </script>
+   <div class="fb">
+      <a href="#">
+        <img src="./image/main/fb.png" alt="페이스북" class="fb_logo">
+        <span>파스퇴르 facebook</span>
+        <img src="./image/main/btn_next2.png" alt="재생" class="fb_btn">
+      </a>
+   </div>
+   <div class="site">
+    	<ul>
+    		<li>
+    		  <a href="#">
+    		  	<img src="./image/main/logo_i_ft.png" alt="파스퇴르아이" class="logo_i">
+    		  </a>
+    		</li>
+    		<li>
+    		  <a href="#">
+    		  	<img src="./image/main/logo_mall_ft.png" alt="파스퇴르몰" class="logo_mall">
+    		  </a>
+    		</li>
+    	</ul>
+   </div> 	 
+	<footer class="ft">
+			<div class="ft_wrap">
+			    <div class="sns">
+			    	<ul>
+			    		<li><a href="#" class="ico1"></a></li>
+			    		<li><a href="#" class="ico2"></a></li>
+			    		<li><a href="#" class="ico3"></a></li>
+			    		<li><a href="#" class="ico4"></a></li>
+			    		<li><a href="#" class="ico5"></a></li>
+			    	</ul>
+			    </div>
+				<div class="tel"> 
+				  <ul class="left">
+				    <li>
+					  <span>제품문의 및 상담</span>
+                </li>
+                <li>
+                	<a href="tel:1577-6330" class="tel_txt">1577-6330</a>
+                </li>
+              </ul>
+              <ul class="right">
+                <li>
+                	<span>분유문의 및 육아상담</span>
+                </li>
+                <li>
+                 <a href="tel:1588-6330" class="tel_txt">1588-6330</a>
+                </li>
+              </ul>
+            </div>
+            <div class="ft_nav">
+               <ul>
+               	<li><a href="#" target="_blank">개인정보처리방침</a></li>
+               	<li><a href="#" target="_blank">이용약관</a></li>
+               	<li><a href="#" target="_blank">인재채용</a></li>
+               	<li><a href="#" target="_blank">사업장 소개</a></li>
+               </ul>
+				</div>
+				<address class="copy">
+            서울시 영등포구 양평로19길 19  대표전화 : 1588-6330<br>
+            COPYRIGHT &copy; 2020 BY LOTTE FOODS..LTD. ALL RIGHT RESERVED.
+            </address>
+			</div>
+		</footer>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
