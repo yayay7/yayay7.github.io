@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
 body {
-    width: 100%;
+    width: 100%;height: 100%;overflow-x: hidden;
 }
 
-/*데스크탑용--------------------------------------------*/
+/*고화질 데스크탑용--------------------------------------------*/
 #wrap {
     display: flex;
     flex-flow: column nowrap;
@@ -88,6 +88,7 @@ body {
     top: 80px;
     left: 8%;
     position: absolute;
+    z-index: 999;
 }
 
 .ck_item {
@@ -98,13 +99,18 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.7);
+    width: 50%;
+    height: 100%;
+    background: #fff;
     z-index: 9999;
     box-sizing: border-box;
     display: none;
-}
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    }
+    
+#menu_col::-webkit-scrollbar {display: none;}
 
 #ck1:checked ~ #menu_col {
     display: block;
@@ -118,14 +124,13 @@ body {
     background-size: contain;
     cursor: pointer;
     position: absolute;
-    top: 15px;
-    left: 70%;
+    top: 20px;
+    right: 5%;
 }
 
 #menu_col > ul {
-    width: 80%;
-    height: 100vh;
-    background: #eee;
+    width: 100%;
+    height: 100%;
 }
 
 .menu_dep1:first-child:before {
@@ -138,7 +143,7 @@ body {
 
 .menu_dep1 {
     width: 100%;
-    height: auto;
+    line-height: 2.7;
     z-index: 9;
     background: #fff;
 }
@@ -164,22 +169,23 @@ body {
     display: block;
     width: 50%;
     height: 100%;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: bold;
     font-family: 'Nanum Gothic';
+    text-indent: 2em;
     color: #333;
-    padding: 10px;
     text-decoration: none;
 }
 
 .m_sub {
     display: none;
-    width: 40%;
+    width: 50%;
     height: 0;
     position: absolute;
     top: 60px;
-    right: 20%;
+    right: 0;
     z-index: 99;
+    padding-top: 20px;
 }
 
 #menu_col li.on .mMenu {
@@ -197,21 +203,24 @@ body {
 }
 
 .m_sub > li {
-    padding: 10px 0 10px 0;
+    line-height: 2.7;
 }
 
 .m_sub > li > a {
     display: block;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: bold;
     color: #333;
     font-family: 'Nanum Gothic';
     text-indent: 2em;
 }
 
+
 /*<---search--->*/
 .search {
-    order: 5;
+    position: absolute;
+    top: 80px;
+    right: 8%;
     width: 70px;
     height: 70px;
     background-image: url(../data/images/search.png);
@@ -219,11 +228,56 @@ body {
     background-position: center center;
     background-size: 55%;
     background-color: #3179ff;
+    border: none;
+    outline: none;
     cursor: pointer;
+    z-index: 999;
+}
+
+.search_box.on {
+    height: 70px;
+    visibility: visible;
+}
+
+.search_box {
     position: absolute;
     top: 80px;
     right: 8%;
+    width: 308px;
+    height: 0;
+    background: #fff;
+    border: 3px solid #3179ff;
+    z-index: 999;
+    transition: height 0.5s;
+    visibility: hidden;
+    box-sizing: border-box;
+}
+
+.in_search {
+    display: block;
+    width: 235px;
+    height: 63px;
+    float: left;
+    font-size: 1.5em;
+    text-indent: 1em;
+    font-family: 'Nanum Gothic';
+    color: #333;
     border: 0;
+    outline: 0;
+}
+
+.search_box .s_btn {
+    display: block;
+    width: 65px;
+    height: 65px;
+    float: right;
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: 'Nanum Gothic';
+    background: #3179ff;
+    color: #fff;
+    border: 0;
+    outline: 0;
 }
 
 /*<---gnb--->*/
@@ -235,6 +289,7 @@ body {
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
     background: #fff;
+    z-index: 99;
 }
 
 .gnb > ul {
@@ -853,18 +908,21 @@ body {
 }
 
 .vs_lst {
-    width: 1300%;
+    position: relative;
+    width: 1200px;
+    height: 500px;
     margin-top: 20px;
 }
 
 .vs_lst li {
-    position: relative;
-    float: left;
-    width: 7.692307692307692%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1200px;
+    height: 500px;
 }
 
-.vs_img {
-    display: block;
+.vs_img {    
     width: 1200px;
     height: 500px;
     background-repeat: no-repeat;
@@ -988,27 +1046,22 @@ body {
 .btn_box {
     position: absolute;
     top: 110px;
-    left: 60%;
+    left: 59%;
     z-index: 99;
 }
 
-.btn_box li {
-    float: left;
-    margin-right: 5px;
-}
-
-.btn_box li button {
-    display: block;
-    width: 15px;
-    height: 15px;
+.btn_box a {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 0 2px;
     border: 2px solid #cbcbcb;
     border-radius: 10px;
-    background: #ffffff;
+    background: #fff;
 }
 
-.btn_box li.on button {
+.btn_box a.select {
     width: 30px;
-    height: 15px;
     background: #3179ff;
     border: 2px solid #3179ff;
 }
@@ -1598,6 +1651,123 @@ body {
         top: 15px;
         left: 5%;
     }
+    
+    #menu_col {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 100%;
+        background: #fff;
+        z-index: 9999;
+        box-sizing: border-box;
+        display: none;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    
+    #menu_col::-webkit-scrollbar {display: none;} 
+
+    #ck1:checked ~ #menu_col {
+        display: block;
+    }
+
+    .close {
+        display: block;
+        width: 45px;
+        height: 45px;
+        background-image: url(../data/images/close.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 50%;
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        left: 7%;    
+    }
+
+    #menu_col > ul {
+        width: 100%;
+    }
+
+    .menu_dep1:first-child:before {
+        content: "";
+        display: block;
+        border-bottom: 1px solid #bcbcbc;
+        padding-top: 75px;
+        margin-bottom: 20px;
+    }
+
+    .menu_dep1 {
+        width: 100%;
+        z-index: 9;
+    }
+
+    #menu_col li a.mMenu:after {
+        content: "▶";
+        position: absolute;
+        left: 28%;
+        color: #333;
+    }
+
+    #menu_col li.on a.mMenu:after {
+        content: "◀";
+        color: #3179ff;
+    }
+
+    #menu_col li:nth-child(4) a.mMenu:after,
+    #menu_col li:nth-child(7) a.mMenu:after {
+        content: "";
+    }
+
+    .mMenu {
+        display: block;
+        width: 50%;
+        height: 100%;
+        font-size: 1.2em;
+        font-weight: bold;
+        font-family: 'Nanum Gothic';
+        color: #333;
+        padding: 12px;
+        text-decoration: none;
+    }
+
+    .m_sub {
+        display: none;
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        top: 75px;
+        left: 50%;
+        z-index: 99;
+        padding-top: 20px;
+    }
+
+    #menu_col li.on .mMenu {
+        color: #3179ff;
+    }
+
+    #menu_col li.on .m_sub {
+        display: block;
+        background: #3179ff;
+    }
+
+    #menu_col li.on .m_sub li a {
+        color: #fff;
+    }
+
+    .m_sub > li {
+        line-height: 3;
+    }
+
+    .m_sub > li > a {
+        display: block;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #333;
+        font-family: 'Nanum Gothic';
+        text-indent: 2em;
+    }
 
     .logo {
         order: 2;
@@ -1654,11 +1824,56 @@ body {
         border-radius: 50%;
     }
 
+    .search_box.on {
+        visibility: visible;
+        height: 50px;
+    }
+
+    .search_box {
+        position: absolute;
+        top: 75px;
+        right: 0;
+        width: 100%;
+        height: 50px;
+        border: 3px solid #3179ff;
+        z-index: 999;
+        transition: 0.5s;
+        visibility: hidden;
+        box-sizing: border-box;
+    }
+
+    .in_search {
+        display: block;
+        width: 80%;
+        height: 44px;
+        float: left;
+        font-size: 1.3em;
+        text-indent: 1em;
+        font-family: 'Nanum Gothic';
+        color: #333;
+        border: 0;
+        outline: 0;
+    }
+
+    .search_box .s_btn {
+        display: block;
+        width: 20%;
+        height: 44px;
+        float: right;
+        font-size: 1.3em;
+        font-weight: bold;
+        font-family: 'Nanum Gothic';
+        background: #3179ff;
+        color: #fff;
+        border: 0;
+        outline: 0;
+    }
+
     /*<---gnb--->*/
     .gnb {
         order: 4;
         width: 100%;
-        height: 45px;
+        height: 50px;
         background-color: #3179ff;
         border: 0;
         margin-top: 75px;
@@ -1667,26 +1882,20 @@ body {
     .gnb_dep1 > a {
         display: block;
         text-align: center;
-        line-height: 45px;
-        font-size: 1em;
+        line-height: 50px;
+        font-size: 1.2em;
         color: #fff;
     }
 
-    .sub {
-        width: 100%;
-        height: 430px;
+    .gnb > ul:hover .sub,.gnb > ul:active .sub {
+        display: none;
     }
 
-    .sub a {
-        display: block;
-        font-size: .9em;
-        line-height: 2em;
-    }
-
-    .gnb_dep1:hover > a {
-        color: #3179ff;
-        background: #fff;
+    .gnb_dep1:hover > a,.gnb_dep1:active > a {
+        color: #fff;
+        text-shadow: 1px 1px 7px rgba(0,0,0,0.8);
         font-size: 1.2em;
+        text-decoration: none;
     }
 
     /*<---바디 태그--->*/
@@ -1895,7 +2104,7 @@ body {
     }
 
     .slider_wrap {
-        width: 95%;
+        width: 100%;
         height: 100%;
         margin: 0 auto;
         overflow: hidden;
@@ -1931,7 +2140,7 @@ body {
     .vs_box {
         position: absolute;
         top: 76px;
-        left: 48%;
+        left: 45%;
         width: 52%;
         height: 500px;
         background: rgba(255, 255, 255, 0.8);
@@ -1940,8 +2149,8 @@ body {
     .vs_con {
         position: absolute;
         top: -30px;
-        left: 48%;
-        width: 400px;
+        left: 35%;
+        width: 52%;
         height: 500px;
         z-index: 99;
         margin-left: 2%;
@@ -1973,18 +2182,13 @@ body {
 
     .btn_box {
         position: absolute;
-        top: 110px;
-        left: 50%;
+        top: 100px;
+        left: 52%;
         z-index: 99;
     }
 
-    .btn_box li {
-        float: left;
-        margin-right: 5px;
-    }
-
-    .btn_box li button {
-        display: block;
+    .btn_box a {
+        display: inline-block;
         width: 15px;
         height: 15px;
         border: 2px solid #cbcbcb;
@@ -1992,9 +2196,8 @@ body {
         background: #ffffff;
     }
 
-    .btn_box li.on button {
-        width: 30px;
-        height: 15px;
+    .btn_box a.select {
+        width: 28px;
         background: #3179ff;
         border: 2px solid #3179ff;
     }
@@ -2364,12 +2567,16 @@ body {
         top: 0;
         left: 0;
         width: 100%;
-        height: 100vh;
-        background: rgba(0, 0, 0, 0.7);
+        height: 100%;
+        background: #fff;
         z-index: 9999;
         box-sizing: border-box;
         display: none;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
+    
+    #menu_col::-webkit-scrollbar {display: none;} 
 
     #ck1:checked ~ #menu_col {
         display: block;
@@ -2377,20 +2584,20 @@ body {
 
     .close {
         display: block;
-        width: 25px;
-        height: 25px;
+        width: 40px;
+        height: 40px;
         background-image: url(../data/images/close.png);
-        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 50%;
         cursor: pointer;
         position: absolute;
-        top: 15px;
-        left: 80%;
+        top: 10px;
+        left: 5%;    
     }
 
     #menu_col > ul {
-        width: 90%;
-        height: 100vh;
-        background: #eee;
+        width: 100%;
     }
 
     .menu_dep1:first-child:before {
@@ -2403,15 +2610,13 @@ body {
 
     .menu_dep1 {
         width: 100%;
-        height: auto;
         z-index: 9;
-        background: #fff;
     }
 
     #menu_col li a.mMenu:after {
         content: "▶";
         position: absolute;
-        left: 33%;
+        left: 28%;
         color: #333;
     }
 
@@ -2427,7 +2632,7 @@ body {
 
     .mMenu {
         display: block;
-        width: 40%;
+        width: 50%;
         height: 100%;
         font-size: 1.1em;
         font-weight: bold;
@@ -2440,12 +2645,12 @@ body {
     .m_sub {
         display: none;
         width: 50%;
-        height: auto;
+        height: 100%;
         position: absolute;
         top: 60px;
-        right: 10%;
+        left: 50%;
         z-index: 99;
-        overflow: scroll;
+        padding-top: 20px;
     }
 
     #menu_col li.on .mMenu {
@@ -2454,7 +2659,6 @@ body {
 
     #menu_col li.on .m_sub {
         display: block;
-        height: 100vh;
         background: #3179ff;
     }
 
@@ -2463,7 +2667,7 @@ body {
     }
 
     .m_sub > li {
-        padding: 8px 0 8px 0;
+        line-height: 2.7;
     }
 
     .m_sub > li > a {
@@ -2472,7 +2676,7 @@ body {
         font-weight: bold;
         color: #333;
         font-family: 'Nanum Gothic';
-        text-indent: .3em;
+        text-indent: 2em;
     }
 
     /*<---logo--->*/
@@ -2527,6 +2731,51 @@ body {
         background-color: transparent;
         border: 1px solid #ccc;
         border-radius: 50%;
+    }
+
+    .search_box.on {
+        visibility: visible;
+        height: 55px;
+    }
+
+    .search_box {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        height: 55px;
+        border: 4px solid #3179ff;
+        z-index: 999;
+        transition: 0.5s;
+        visibility: hidden;
+        box-sizing: border-box;
+    }
+
+    .in_search {
+        display: block;
+        width: 80%;
+        height: 47px;
+        float: left;
+        font-size: 1.3em;
+        text-indent: 1em;
+        font-family: 'Nanum Gothic';
+        color: #333;
+        border: 0;
+        outline: 0;
+    }
+
+    .search_box .s_btn {
+        display: block;
+        width: 20%;
+        height: 47px;
+        float: right;
+        font-size: 1.3em;
+        font-weight: bold;
+        font-family: 'Nanum Gothic';
+        background: #3179ff;
+        color: #fff;
+        border: 0;
+        outline: 0;
     }
 
     /*<---gnb--->*/
@@ -2591,7 +2840,7 @@ body {
 
     .main_box_wrap > div {
         position: relative;
-        width: 48%;
+        width: 50%;
         height: 170px;
         text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
         box-shadow: inset 2px 2px 3px 1px rgba(255, 255, 255, 0.2);
@@ -2599,9 +2848,8 @@ body {
         background-size: contain;
         background-position: center center;
         margin: 0 auto;
-        margin-bottom: 8px;
         cursor: pointer;
-        border-radius: 10px;
+        border-radius: 0;
     }
 
     .main_box_wrap > div > a {
@@ -2681,7 +2929,7 @@ body {
         display: flex;
         width: 90%;
         margin: 0 auto;
-        margin-top: 475px;
+        margin-top: 450px;
     }
 
     .con_box_wrap {
@@ -2692,7 +2940,7 @@ body {
     .con_box_01 {
         width: 100%;
         height: 230px;
-        border-radius: 10px;
+        border-radius: 0;
         box-shadow: inset 2px 2px 5px 1px rgba(255, 255, 255, 0.3), 1px 1px 2px rgba(0, 0, 0, 0.3);
     }
 
@@ -2821,7 +3069,7 @@ body {
         font-weight: bold;
         font-family: 'Nanum Gothic';
         color: #333;
-        text-align: left;
+        text-align: center;
         text-indent: 1.5em;
     }
 
@@ -2831,21 +3079,24 @@ body {
         width: 50px;
         height: 2px;
         background: #3179ff;
-        position: absolute;
-        left: 30px;
     }
-
+    
     .vs_lst {
-        width: 1300%;
+        position: relative;
+        width: 100%;
+        height: 250px;
+        margin-top: 20px;
     }
 
-    .vs_lst li {
-        float: left;
-        width: 7.692307692307692%;
+   .vs_lst li {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 250px;
     }
 
     .vs_img {
-        display: block;
         width: 100%;
         height: 250px;
         background-repeat: no-repeat;
@@ -2855,20 +3106,19 @@ body {
 
     .vs_box {
         position: absolute;
-        top: 58px;
-        left: 60%;
-        width: 40%;
+        top: 70px;
+        left: 55%;
+        width: 45%;
         height: 250px;
         background: rgba(255, 255, 255, 0.8);
     }
 
     .vs_con {
         position: absolute;
-        top: -80px;
-        left: 62%;
-        width: 34%;
-        margin-top: 50px;
-        margin-left: 10px;
+        top: 0;
+        left: 58%;
+        width: 40%;
+        padding-top: 30px;
     }
 
     .vs_tit {
@@ -2877,6 +3127,8 @@ body {
         font-family: 'Noto Sans KR';
         color: #333;
         transition-duration: 0.5s;
+        margin-top: 40px;
+        margin-left: 10px;
     }
 
     .vs_sub {
@@ -2894,7 +3146,9 @@ body {
         border-radius: 20px;
         background: #3179ff;
         text-align: center;
-        margin-top: 60px;
+        position: absolute;
+        top: 130px;
+        left: 10px;
     }
 
     .more_txt {
@@ -2910,13 +3164,8 @@ body {
         z-index: 99;
     }
 
-    .btn_box li {
-        float: left;
-        margin-right: 7px;
-    }
-
-    .btn_box li button {
-        display: block;
+    .btn_box a {
+        display: inline-block;
         width: 10px;
         height: 10px;
         border: 2px solid #cbcbcb;
@@ -2924,9 +3173,8 @@ body {
         background: #ffffff;
     }
 
-    .btn_box li.on button {
+    .btn_box a.select {
         width: 20px;
-        height: 10px;
         background: #3179ff;
         border: 2px solid #3179ff;
     }
@@ -2938,7 +3186,7 @@ body {
         width: 100%;
         height: auto;
         margin: 0 auto;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     .article .arti_lst {
@@ -2946,7 +3194,7 @@ body {
         height: auto;
         display: flex;
         flex-flow: row wrap;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     .arti_box {
@@ -3035,7 +3283,7 @@ body {
         width: 100%;
         height: auto;
         margin: 0 auto;
-        margin-top: 20px;
+        margin-top: 15px;
         clear: both;
     }
 
@@ -3102,7 +3350,7 @@ body {
         height: 260px;
         display: flex;
         background: #58595B;
-        margin-top: -125px;
+        margin-top: -130px;
         z-index: 99;
     }
 
@@ -3137,17 +3385,17 @@ body {
 
     .ft_nav a {
         display: block;
-        font-size: .8em;
+        font-size: .7em;
         color: #fff;
         text-align: center;
     }
 
     .address {
         clear: both;
-        margin-top: 20px;
+        margin-top: 10px;
         width: 100%;
         height: auto;
-        font-size: .8em;
+        font-size: .7em;
         line-height: 2;
         color: #fff;
     }
@@ -3162,7 +3410,7 @@ body {
         margin-top: 10px;
         width: 100%;
         height: auto;
-        font-size: .8em;
+        font-size: .7em;
         color: #fff;
     }
 
@@ -3175,7 +3423,7 @@ body {
         position: absolute;
         width: 100%;
         height: auto;
-        top: 140px;
+        top: 130px;
     }
 
     .logo_mark li {
@@ -3184,6 +3432,7 @@ body {
         height: auto;
         text-align: center;
         line-height: 10px;
+
     }
 
     .logo_mark li:nth-child(1) {
